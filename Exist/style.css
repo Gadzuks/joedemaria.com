@@ -1,0 +1,13 @@
+body{
+	background-color: #fecc2f;
+}
+
+#message{
+	width: 400px;
+	height: 30px;
+}
+
+.row{
+	padding-top: 40px;
+	height: 200px;
+}

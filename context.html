@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html language="en">
+  <head>
+    <title>Joe DeMaria | UX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--Custom Styles-->
+	<link href="masterStyle.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47387002-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body data-spy="scroll" data-target=".sidebar">
+	<!--Master Nav-->
+	<header class="navbar navbar-default navbar-fixed-top docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="Index.html">Joe DeMaria</a>
+			</div>
+			<nav class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="Index.html">Portfolio</a></li>
+					<li><a href="Resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--Main Information-->
+	<div class="container docs-container">
+		<div class="row">
+			<!--Sidebar-->
+			<div class="col-md-3">
+				<div class="sidebar hidden-print" data-spy="affix" data-offset-top="60" role="complementary">
+					<ul class="nav sidenav">
+						<li>
+							<a href="#jr-summary">Summary</a>
+						</li>
+						<li>
+							<a href="#define">Defining the Project</a>
+							<ul class="nav">
+								<li><a href="#context-relevant">Contextually Relevant?</a></li>
+								<li><a href="#users">Who are the Users?</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#goals">Project Goals</a>
+							<ul class="nav">
+								<li><a href="#conceptualize">Conceptualize</a></li>
+								<li><a href="#meta-context">Meta Context</a></li>
+								<li><a href="#research-based">Research Based Design</a></li>
+								<li><a href="#privacy-concerns">Privacy Concerns</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#lit-review">Literature Review</a>
+							<ul class="nav">
+								<li><a href="#usage-location">Usage by Location</a></li>
+								<li><a href="#personal">Personalized Usage</a></li>
+								<li><a href="#user-needs">User Needs</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#fieldwork">Fieldwork</a>
+							<ul class="nav">
+								<li><a href="#people-need">What people need</a></li>
+								<li><a href="#people-share">What people will share</a></li>
+								<li><a href="#privacy">Privacy concerns</a></li>
+								<li><a href="#takeaway">Takeaway</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#i-r">Ideate and Refine</a>
+						</li>
+						<li>
+							<a href="#prototype">Final Prototype</a>
+							<ul class="nav">
+								<li><a href="#initial">Initial Home Lockscreen</a></li>
+								<li><a href="#contact">Contact Meta Context</a></li>
+								<li><a href="#restaurant">At the Restaurant</a></li>
+								<li><a href="#prediction">Application Prediction</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--Content-->
+			<div class="col-md-9" role="main">
+				<!--Summary-->
+				<div class="docs-section">
+					<div class="page-header">
+						<h1 id="jr-summary">Summary</h1>
+					</div>
+					<p>
+						The job given to our team was to identify a community of users who have a communication need that's unmet, do fieldwork to better 
+						understand the needs of the potential users, and design a prototype of an online system that solves the communication problem identified.
+					</p>
+					<p>
+						Our group was interested in analysing mobile contextual communication and information presentation. We researched and designed a future 
+						prototype for the <a href="https://play.google.com/store/apps/details?id=com.facebook.home" target="_blank">Facebook Home lock screen</a> which contextually presents information and contact meta information while travelling from home 
+						to a restaurant. We did an extensive literature review and created a survey determining what users want within certain contexts, what information 
+						they need and are willing to share in order to better communicate, and user privacy concerns regarding contextual systems.
+					</p>
+				</div>
+				<!--Defining the project-->
+				<div class="docs-section">
+					<div class="page-header">
+						<h1 id="define">Defining the Project</h1>
+					</div>
+					<h3 id="context-relevant">Contextually Relevant?</h3>
+					<p>
+						In today's world, cell phones allow users to organize their activities with millions of applications and view almost any 
+						information on the web at will.  The way you interact with these services and information is the same regardless of context - 
+						one must manually select what they want to use.
+					</p>
+					<p>
+						A contextually relevant system is one which is able to anticipate what the users would most likely use or want to see based upon 
+						the context they are in.  Some excellent examples of modern contextual based systems are <a href="http://www.google.com/landing/now/" target="_blank">Google Now</a> and 
+						<a href="https://www.coverscreen.com/" target="_blank">Cover</a>.
+					</p>
+					<p>
+						Contextually relevant systems are now pushing the bounds of technology, user personalization, and user privacy.
+					</p>
+					<h3 id="users">Who are the Users?</h3>
+					<p>
+						The potential users of this technology would have access to smart phones and want a better experience of communicating 
+						and accessing information based upon their context.
+					</p>
+				</div>
+				<!--Project Goals-->
+				<div class="docs-section">
+					<div class="page-header">
+						<h1 id="goals">Project Goals</h1>
+					</div>
+					<p>
+						After some intense brainstorming sessions, we formed some realistic constraints and goals to focus our research and design.
+					</p>
+					<img src="context/brain1.jpg" class="brainstorm" alt="brainstorm 1">
+					<img src="context/brain2.jpg" class="brainstorm" alt="brainstorm 2">
+					<img src="context/brain3.jpg" class="brainstorm" alt="brainstorm 3">
+					<h3 id="conceptualize">Conceptualize a system for the Facebook Home lockscreen.</h3>
+					<p>
+						A contextually relevant system will never be able to perfectly predict what a user wants.  A lockscreen is unobtrusive and can easily be disregarded if it does 
+						not contain relevance to the user.  Plus, Facebook would be a realistic platform if this were developed since it
+						already holds a plethora of information about people and their personality.
+					</p>
+					<h3 id="meta-context">Present Others' Meta Context</h3>
+					<p>
+						The problem we currently face for mobile communication is that there is no way for user A or user B to engage in any meta communication 
+						about the intended exchange.  Knowledge of whether a friend is busy or not could save you the time of a missed or rejected call.  
+						We wanted to find creative solutions to solve this annoyance.
+					</p>
+					<h3 id="research-based">Research and Design for a Scenario</h3>
+					<p>
+						The scenario we are designing our prototype for is a journey someone would take from their home to a restaurant.  
+						We placed this constraint to focus the content of what we are presenting in a digestible manner others could understand.
+					</p>
+					<h3 id="privacy-concerns">Explore Privacy Concerns</h3>
+					<p>
+						The ability for technology to predict your intention is still in its infancy.  If contextually relevant systems are going to be implemented, 
+						it's extremely important to define the privacy concerns and design systems that ameliorate them.
+					</p>
+				</div>
+				<!--Literature Review-->
+				<div class="docs-section">
+					<div class="page-header">
+						<h1 id="lit-review">Literature Review</h1>
+					</div>
+					<p>
+						Our literature review covered the challenges and user needs for designing a contextually relevant system.
+					</p>
+					<h3 id="usage-location">Usage by Location</h3>
+					<p>
+						Categorizing and presenting information for each and every context is impossible. 
+						<a href="http://dl.acm.org/citation.cfm?id=2444520" target="_blank">Karikoski & Soikkeli (2013)</a> broke this problem 
+						down by analyzing mobile phone usage patterns of location context. They identified five locations with most usage: home, office, other meaningful, 
+						elsewhere, and abroad.  These usage contexts are an excellent way to form a system based on context.
+					</p>
+					<p>
+						Research found voice calls are used least frequently at home, but the length of a call is the longest. SMS is sent most frequently at the office, 
+						where call length is the shortest. While one is elsewhere, one is more likely to initiate a call. These usage patterns are to aid in successful 
+						anticipation of user intent based on location.
+					</p>
+					<h3 id="personal">Personalized Usage</h3>
+					<p>
+						Although there is a high volume of research concerning context usage patterns, sampled participants usage patterns can vary highly 
+						(<a href="http://dl.acm.org/citation.cfm?id=2037383" target="_blank">Bohmer et. al, 2011</a>; 
+						<a href="http://dl.acm.org/citation.cfm?id=2444520" target="_blank">Karikoski et. al., 2013</a>). 
+						To account for varied individual usage patterns within a context, there has to be a user 
+						intent prediction algorithm that feasibly anticipates which application the user would most likely open. Researchers have been prototyping and 
+						testing these anticipatory algorithms; even designing them to be the least battery intensive 
+						(<a href="http://dl.acm.org/citation.cfm?id=2370442" target="_blank">Huang et. al, 2012</a>; 
+						<a href="http://dl.acm.org/citation.cfm?id=2370243" target="_blank">Shin et. al, 2012</a>; 
+						<a href="http://www.sciencedirect.com/science/article/pii/S1877050913006686" target="_blank">Sun et. al, 2013</a>; 
+						<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=196361" target="_blank">Parate et. al, 2013</a>).
+					</p>
+					<h3 id="user-needs">User Needs</h3>
+					<p>
+						<a href="http://www.techkwondo.com/external/pdf/reports/user_need_for_location_mobile_svcs.pdf" target="_blank">Kaasinen (2003)</a>, 
+						prototyped an early contextual device that provided relevant SMS and GPS contextual information. Users were asked to be autonomous 
+						within a set scenario and report their needs. The research found that users were interested in receiving location aware information about traffic, 
+						weather, or last-minute ticket deals throughout most scenarios. The GPS services should prompt pre-trip planning and on-route information for 
+						points of interest. Most users expressed they would desire this type of technology to prompt phone numbers for relevant friends and services. 
+						Many requested that they would like to store and share location-aware data with others. Users indicated that they were likely to use this technology 
+						in an unfamiliar location.
+					</p>
+				</div>
+				<!--Fieldwork-->
+				<div class="docs-section">
+					<div class="page-header">
+						<h1 id="fieldwork">Fieldwork</h1>
+					</div>
+					<p>
+						We designed our survey similar to prior research 
+						(<a href="http://nhenze.net/uploads/Utilizing-Contextual-Information-for-Mobile-Communication.pdf" target="_blank">Knittel et. al, 2013</a>) 
+						with the goals of (1) what information people would like 
+						to know about their contacts context to better communicate with them, (2) what information people are willing to share about their context, 
+						and (3) what privacy concerns people have regarding contextual systems.
+					</p>
+					<p>
+						<a href="https://docs.google.com/forms/d/1OXWynTsuvNkDbYK1M-Gz5rO_7rYex27KH-PvW4f7vcM/viewform" target="_blank">Check out the survey here!</a>
+					</p>
+					<h3 id="people-need">What people need to better communicate with contacts</h3>
+					<p>
+						According to the participants, knowing how to better communicate with others would involve an abstract location, a specific location, 
+						and an indication of whether they are busy.
+					</p>
+					<h3 id="people-share">What people are willing to share to better communicate</h3>
+					<p>
+						The same participants indicated that they would only be willing to share their abstract location.
+					</p>
+					<h3 id="privacy">Privacy concerns</h3>
+					<p>
+						We were able to grasp a few repeating concerns about privacy to remember while designing: uncontrolled access to my private information, 
+						giving up location as well as possibly suggesting what you are doing there, and not being aware of the information you are agreeing to share.
+					</p>
+					<h3 id="takeaway">Takeaway</h3>
+					<p>
+						Creating a non-invasive meta context would have to involve (1) sharing an abstract location (home, work, traveling elsewhere), 
+						(2) knowledge of whether person is busy (sharing calendar status), (3) advanced privacy options with the ability to share more context or restrictions.
+					</p>
+					<p>
+						<a href="https://docs.google.com/a/uw.edu/forms/d/1OXWynTsuvNkDbYK1M-Gz5rO_7rYex27KH-PvW4f7vcM/viewanalytics" target="_blank">Check out the quantified results here!</a>
+					</p>
+				</div>
+				<!--Ideate and Refine-->
+				<div class="docs-section">
+					<div class="page-header">
+						<h1 id="i-r">Ideate and Refine</h1>
+					</div>
+					<p>
+						We created a ton of ideas by group sketching and making low fidelity mock-ups.  We continuously modified our design with the feedback we got from others
+					</p>
+					<img src="context/ConceptSketch_Home.jpg" class="prototype" alt="Home Concept Sketch">
+					<img src="context/conceptSketch_Resteraunt.jpg" class="prototype" alt="Restaurant Concept Sketch">
+					<img src="context/FlippedTabsHOME.jpg" class="prototype" alt="Concept Mock-Up">
+					<img src="context/UnflippedTabsHOME.jpg" class="prototype" alt="Concept Mock-Up">
+				</div>
+				<!--Final Prototype-->
+				<div class="docs-section">
+					<div class="page-header">
+						<h1 id="prototype">Final Prototype</h1>
+					</div>
+					<p>
+						Our prototype was created on Axure and <a href="http://hoqiqp.axshare.com/home.html" target="_blank">you can play with it here (zoom your browser to 25%)!</a>  
+					</p>
+					<p>
+						We presented this project to the University of Washington and the Chase user research team.  
+						<a href="context/FinalPaper_JoeEngTridivHasani.pdf" target="_blank">Read the entire report here!</a>
+					<p>
+						Many thanks to my team: Phannipha Arunyaangkul, Hasani Burns, and  Tridiv Sardesai!
+					</p>
+					<h3 id="initial">Initial Home Lockscreen</h3>
+					<img src="context/initial1.jpg" class="prototype" alt="inital home screen 1">
+					<img src="context/initial2.jpg" class="prototype" alt="initial home screen 2">
+					<h3 id="contact">Contact Meta Context</h3>
+					<img src="context/meta1.jpg" class="prototype" alt="meta context 1">
+					<img src="context/meta2.jpg" class="prototype" alt="meta context 2">
+					<h3 id="restaurant">At the Restaurant</h3>
+					<img src="context/rest1.jpg" class="prototype" alt="restaurant 1">
+					<img src="context/rest2.jpg" class="prototype" alt="restaurant 2">
+					<h3 id="prediction">Application Prediction</h3>
+					<img src="context/prediciton.jpg" class="prototype" alt="app prediction">
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--Footer-->
+	<footer class="footer" role="contentinfo">
+		<div class="container">
+			<p>
+				Contact me: <a href="mailto:jdemaria43@gmail.com">jdemaria43@gmail.com</a>
+			</p>
+			<div class="social">
+				<ul class="social-buttons">
+					<li>
+						<a href="http://www.linkedin.com/pub/joseph-demaria/6b/7a4/472" target="_blank">
+						<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="View Joseph DeMaria's profile on LinkedIn">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p>
+				Code and style used from <a href="http://getbootstrap.com/" target="_blank">Bootstrap v3.03</a>
+			</p>
+		</div>
+	</footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
